@@ -1,4 +1,4 @@
-\documentclass{report}
+\documentclass{polypfe}
 \usepackage[a4paper, margin=1in]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
@@ -24,19 +24,16 @@
 \newcommand\mylocaltableofcontents{%
 \begingroup
 \renewcommand*{\contentsname}{\textcolor{black}{\textbf{Contents}}\\[-1.0em]\color{black}\rule{\textwidth}{1pt}}
-\setcounter{secnumdepth}{1}
-\etocsettocdepth{1}
+\setcounter{secnumdepth}{3} % Number sections and subsections
+\etocsettocdepth{3}
 
 \localtableofcontents
 \noindent\rule{\textwidth}{1pt}
 \endgroup
 }
 
-
 % Define custom colors using hex codes
 \definecolor{blue}{HTML}{0039a6}
-
-
 
 % Adjust chapter title formatting
 \titleformat{\chapter}[display]
@@ -52,7 +49,7 @@
 
 % Adjust subsection title formatting
 \titleformat{\subsubsection}
-{\normalfont\large\bfseries\color{blue}}{\thesubsubsection}{1em}{}
+{\normalfont\normalsize\bfseries\color{blue}}{\thesubsubsection}{1em}{}
 
 
 % Adjust itemize and enumerate formatting
