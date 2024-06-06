@@ -3,56 +3,48 @@
 This section outlines the key aspects of project management with Scrum including the product backlog, use case diagram, sprint planning, and interface prototyping.
 
 \subsection{Backlog Features}
+
 \begin{longtable}{|c|p{0.83\textwidth}|c|}
 	\hline
-	\textbf{ID} & \textbf{User Story} & \textbf{Effort} \\
+	\textbf{ID} & \textbf{Description} & \textbf{Effort} \\
 	\hline
-	\endhead
-	1           & As a new user, I want to register for an account with a password, and email so that I can access the system. & Low \\
+	1           & Register for an account with a password and email to access the system. & Low \\
 	\hline
-	2           & As a user, I want to log in to my account using my email and password so that I can securely access my information. & Low \\
+	2           & Log in to the account using email and password for secure access. & Low \\
 	\hline
-	3           & As a user, I want to reset my password using my email in case I forget it, to regain access to my account. & Low \\
+	3           & Reset the password via email in case of forgetting it. & Low \\
 	\hline
-	4           & As a user, I want to create a new organization with a unique name, becoming its administrator, so I can manage users and templates within that organization. & High \\
+	4           & Create a new organization with a unique name and become its administrator to manage users and templates. & High \\
 	\hline
-	5           & As a user, I want to view a list of all organizations I'm part of, so I can easily navigate and manage them. & Medium \\
+	5           & View a list of all organizations to navigate and manage them. & Medium \\
 	\hline
-	6           & As a user, I want to have access to the shared work (templates, emails, media) within my organization, ensuring I can collaborate effectively. & High \\
+	6           & Access shared work (templates, campaigns, media) within the organization for effective collaboration. & High \\
 	\hline
-	7           & As an administrator of an organization, I want to deactivate or remove users from my organization, ensuring security and access control. & Medium \\
+	7           & Deactivate or remove users from the organization for security and access control. & Medium \\
 	\hline
-	8           & As an administrator of an organization, I want to add other users to my organization and assign them specific roles , so I can control access and permissions. & High \\
+	8           & Add users to the organization and assign specific roles for access control. & High \\
 	\hline
-	9           & As an administrator of an organization, I want to view and manage the roles associated with each user, ensuring proper permissions are maintained. & Medium \\
+	9           & View and manage user roles within the organization. & Medium \\
 	\hline
-	10          & As a user, I want to create a new email template, so I can use it for sending emails. & High \\
+	10          & Create new email templates for sending emails. & High \\
 	\hline
-	11          & As a user, I want to edit and update my email templates, ensuring the information is current and accurate. & Medium \\
+	11          & Edit and update email templates to keep information accurate. & Medium \\
 	\hline
-	12          & As a user, I want to view a list of all my email templates, so I can quickly access and manage them. & Low \\
+	12          & View a list of all email templates for easy management. & Low \\
 	\hline
-	13          & As a user, I want to search for specific email templates or medias within my organization, making it easier to locate relevant information. & Medium \\
+	13          & Create and manage email template drafts before finalizing and sending. & High \\
 	\hline
-	14          & As a user, I want to create and manage email template drafts, allowing me to work on them before finalizing and sending. & High \\
+	14          & Create and publish campaigns using selected templates to organize and track marketing efforts.. & High \\
 	\hline
-	15          & As a user, I want to send an email using a selected template to a specified recipient, tracking the sent email's status and timestamp. & High \\
+	15          & View a history of published campaigns for reference. & Low \\
 	\hline
-	16          & As a user, I want to view a history of all the emails I have sent, including their status and timestamp, for reference. & Low \\
+	16          & Generate reports for campaign analysis and informed decision-making. & High \\
 	\hline
-	17          & As a user, I want to create and manage campaigns, allowing me to organize and track my marketing efforts. & High \\
-	\hline
-	18          & As a user, I want to have reports of my campaigns, so I can analyze their effectiveness and make informed decisions. & High \\
-	\hline
-	\caption{Backlog Features}
-	\label{tab:Backlog Features}
 \end{longtable}
 
-
-\newpage
-
+\clearpage
 \subsection{Global Use Case Diagram}
-Figure 2.18 offer us a global overview by presenting a visual description of the functional
+Figure \ref{fig:Global Use Case Diagram} offer us a global overview by presenting a visual description of the functional
 behaviour of our tool. This diagram sums up the interactions among the actors and the
 diverse use cases within the system.
 
@@ -67,7 +59,7 @@ diverse use cases within the system.
 
 \subsection{Sprint Planning}
 
-Figure 2.19 outlines our project's sprint planning. Each sprint had specific goals and durations. The initial phase was for learning the necessary tools. \textbf{Sprint 1} focused on building the email builder and enabling email sending. \textbf{Sprint 2} implemented CI/CD pipelines and deployed the application. \textbf{Sprint 3} worked on creating and managing campaigns and audience management. \textbf{Sprint 4} implemented email tracking functionality. \textbf{Sprint 5} managed media and organization, and conducted final testing and bug fixing across all features. This structured approach ensured thorough development and testing of each feature. As a result, all planned features were successfully implemented and thoroughly tested within the project timeline.
+Figure \ref{fig:Sprint Planning} outlines our project's sprint planning. Each sprint had specific goals and durations. The initial phase was for learning the necessary tools. \textbf{Sprint 1} focused on building the email builder and creating and managing campaigns and audience. \textbf{Sprint 2} worked on CI/CD pipelines and deployed the application. \textbf{Sprint 3} implemented email tracking functionality, and conducted final testing and bug fixing across all features. This structured approach ensured thorough development and testing of each feature. As a result, all planned features were successfully implemented and thoroughly tested within the project timeline.
 
 \begin{figure}[ht]
 	\centering

@@ -1,25 +1,38 @@
 \documentclass{polypfe}
 \usepackage[a4paper, margin=1in]{geometry}
-\usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{graphicx}
 \usepackage[hidelinks]{hyperref}
+\usepackage{caption}
 \usepackage{setspace} 
 \usepackage{fancyhdr} 
 \usepackage{tabularx}
 \usepackage{xcolor}
-\usepackage{minitoc}
-\usepackage{caption}
 \usepackage{longtable}
 \usepackage{etoc, soul, lipsum}
+\usepackage{subcaption}
+\usepackage{pdfpages} % <-- Add this package
+
+
 
 \setlist[itemize]{topsep=0pt, partopsep=0pt, left=1em, label=--}
 \setlist[enumerate]{topsep=0pt, partopsep=0pt, left=1em, label=\arabic*.}
 
+% Re-enable minitoc modifications if needed
+\renewcommand{\thechapter}{\arabic{chapter}}
 
 \begin{document}
 
+% Initialize minitoc
+
 \pagenumbering{roman}
+
+%\includepdf{couverture PFE-Génie informatique ENG 2023.pdf}
+\includepdf{front page.pdf}
+
+\input{dedicaces.tex}
+\newpage
+\input{remerciement.tex}
 
 \tableofcontents
 
@@ -39,7 +52,6 @@
 
 \pagenumbering{arabic}
 
-
 \input{general-introduction/general introduction.tex}
 
 \setstretch{1.5}
@@ -53,15 +65,14 @@
 \input{chapter-1/Adopted Methodology}
 \input{chapter-1/conclusion}
 
-
-\chapter{Requirements and specifications}
+\chapter{Sprint 0: Requirements and specifications}
 \clearpage
 
 \input{chapter-2/introduction}
 \input{chapter-2/Requirements}
 \input{chapter-2/Work Environment}
 \input{chapter-2/Project Management with Scrum}
-%\input{chapter-2/General Architecture of the Application}
+\input{chapter-2/General Architecture of the Application}
 %\input{chapter-2/Deployment Diagram}
 \input{chapter-2/conclusion}
 
@@ -73,7 +84,32 @@
 \input{chapter-3/Functional Specification}
 \input{chapter-3/Design}
 \input{chapter-3/Implementation}
-\input{chapter-3/Test}
 
+
+\chapter{Study and Implementation of Sprint 2}
+\clearpage
+
+\input{chapter-4/introduction.tex}
+\input{chapter-4/backlog}
+\input{chapter-4/functional specification}
+\input{chapter-4/design}
+\input{chapter-4/implementation}
+
+
+\chapter{Study and Implementation of Sprint 3}
+\clearpage
+
+\input{chapter-5/introduction}
+\input{chapter-5/backlog}
+
+\input{chapter-5/functional sepecification}
+
+\input{chapter-5/design}
+
+\input{chapter-5/deployment.tex}
+
+\input{chapter-5/implementation}
+
+\includepdf{back page.pdf}
 
 \end{document}

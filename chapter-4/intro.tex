@@ -1,0 +1,91 @@
+\subsubsection{Use Case 5: Create an Organization}
+
+Table \ref{tab:Use Case 5 Create an Organization} presents a textual description of a use case: Create an Organization.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{\textwidth}{|l|X|}
+		\hline
+		\textbf{Actor}            & User, Admin                                          \\
+		\hline
+		\textbf{Goal}             & To create an organization                            \\
+		\hline
+		\textbf{Preconditions}    & User is logged in.                                   \\
+		\hline
+		\textbf{Basic Flow}       & 1. User selects "Create Organization."               \\
+		                          & 2. USer provides a unique organization name.         \\
+		                          & 2. System creates the organization.                  \\
+		\hline
+		\textbf{Alternative Flow} &
+		If the organization name is already taken, the system displays an error message. \\
+		\hline
+		\textbf{Postconditions}   & New organization is created and accessible.          \\
+		\hline
+	\end{tabularx}
+	\caption{Use Case 5: Create an Organization}
+	\label{tab:Use Case 5 Create an Organization}
+\end{table}
+
+\subsubsection{Use Case 6: Assign Roles to Users}
+
+Table \ref{tab:Use Case 6 Assign Roles to Users} presents a textual description of a use case: Assign Roles to Users.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{\textwidth}{|l|X|}
+		\hline
+		\textbf{Actor}            & Admin                                                               \\
+		\hline
+		\textbf{Goal}             & To assign specific roles to users within the organization           \\
+		\hline
+		\textbf{Preconditions}    & Admin is logged in and exist within the organization.               \\
+		\hline
+		\textbf{Basic Flow}       & 1. Administrator selects a user                                     \\
+		                          & 2. Administrator assigns a role (e.g., admin, member) to the user.  \\
+		                          & 2. Changes are saved.                                               \\
+		\hline
+		\textbf{Alternative Flow} &
+		If the role assignment fails (e.g., due to permissions), the system notifies the administrator. \\
+		\hline
+		\textbf{Postconditions}   & User roles are updated within the organization.                     \\
+		\hline
+	\end{tabularx}
+	\caption{Use Case 6: Assign Roles to Users}
+	\label{tab:Use Case 6 Assign Roles to Users}
+\end{table}
+
+\subsubsection{Use Case 7: User Management}
+
+Table \ref{tab:Use Case 7 User Management} presents a textual description of a use case: User Management.
+
+\begin{table}[ht]
+	\centering
+	\begin{tabularx}{\textwidth}{|l|X|}
+		\hline
+		\textbf{Actor}            & Admin                                                                               \\
+		\hline
+		\textbf{Goal}             & To manage user accounts within the organization                                     \\
+		\hline
+		\textbf{Preconditions}    & Admin is logged in and exist within the organization.                               \\
+		\hline
+		\textbf{Basic Flow}       & 1. Administrator selects "User Management."                                         \\
+		                          & 2. Administrator can add new users, modify user roles and deactivate user accounts. \\
+		                          & 3. Administrator can edit or delete user roles.                                     \\
+		\hline
+		\textbf{Alternative Flow} &
+		If the role management fails (e.g., due to permissions), the system notifies the administrator.                 \\
+		\hline
+		\textbf{Postconditions}   & User accounts are managed effectively within the organization.                      \\
+		\hline
+	\end{tabularx}
+	\caption{Use Case 7: User Management}
+	\label{tab:Use Case 7 User Management}
+\end{table}
+
+\subsubsection{Audience Management}
+
+Audience management features were added to allow users to manage their email recipients. This includes adding, removing, and updating recipients, as well as segmenting the audience for targeted campaigns.
+
+\subsubsection{Organization and Roles Management}
+
+To accommodate different user roles within an organization, I implemented a roles management system. This allows for different access levels and permissions for users depending on their role within the organization.
