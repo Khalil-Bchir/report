@@ -1,4 +1,4 @@
-\documentclass{polypfe}
+\documentclass[pfe ,titlesmallcaps]{polypfe}
 \usepackage[a4paper, margin=1in]{geometry}
 \usepackage{enumitem}
 \usepackage{graphicx}
@@ -28,7 +28,7 @@
 \pagenumbering{roman}
 
 %\includepdf{couverture PFE-Génie informatique ENG 2023.pdf}
-\includepdf{front page.pdf}
+\includepdf{PDF/front page.pdf}
 
 \input{dedicaces.tex}
 \newpage
@@ -52,7 +52,7 @@
 
 \pagenumbering{arabic}
 
-\input{general-introduction/general introduction.tex}
+\input{general/general introduction.tex}
 
 \setstretch{1.5}
 
@@ -84,6 +84,7 @@
 \input{chapter-3/Functional Specification}
 \input{chapter-3/Design}
 \input{chapter-3/Implementation}
+\input{chapter-3/conclusion.tex}
 
 
 \chapter{Study and Implementation of Sprint 2}
@@ -94,6 +95,8 @@
 \input{chapter-4/functional specification}
 \input{chapter-4/design}
 \input{chapter-4/implementation}
+
+\input{chapter-4/conclusion.tex}
 
 
 \chapter{Study and Implementation of Sprint 3}
@@ -110,6 +113,14 @@
 
 \input{chapter-5/implementation}
 
-\includepdf{back page.pdf}
+\input{chapter-5/conclusion.tex}
+
+\newpage
+
+\input{general/general conclusion.tex}
+
+\bibliography{references}
+
+\includepdf{PDF/back page.pdf}
 
 \end{document}
